@@ -12,17 +12,17 @@
 	require_once("../base_utils.php");
 
 //实际使用时请手动更改下方网址为服务器的域名和协议，为调试方便，请用数组指定一个或多个
-	$hostnames=["https://www.zhxtw.cn/","https://zhxtw.cn/","https://qingzhi.zhxtw.cn/","https://127.0.0.1/","http://127.0.0.1/","http://localhost/"];
+	$hostnames=["http://qingzhi-awe.1d35.starter-us-east-1.openshiftapps.com/","https://zhxtw.cn/","https://qingzhi.zhxtw.cn/","https://127.0.0.1/","http://127.0.0.1/","http://localhost/"];
 
 //判断是否存在登录状态以及token值
-	if(!isset($_SESSION['adminname'],$_SESSION['logged'],$_SESSION['token'],$_GET['token'])){
-		diecho("Session已过期，请重新登录",1,"/admin/login.php");
-	}
+//	if(!isset($_SESSION['adminname'],$_SESSION['logged'],$_SESSION['token'],$_GET['token'])){
+//		diecho("Session已过期，请重新登录",1,"/admin/login.php");
+//	}
 //判断token值与session中的是否一致
-	if($_GET['token']!=$_SESSION['token'] && $_GET['token']!=$_SESSION['token'].";" && ($_GET['token']).";"!=$_SESSION['token']){
-		session_destroy();
-		diecho("请重新登录。",1,"/admin/login.php");
-	}
+//	if($_GET['token']!=$_SESSION['token'] && $_GET['token']!=$_SESSION['token'].";" && ($_GET['token']).";"!=$_SESSION['token']){
+//		session_destroy();
+//		diecho("请重新登录。",1,"/admin/login.php");
+//	}
 
 //判断Referer是否正确
 	if(!isset($_SERVER['HTTP_REFERER'])){
