@@ -14,7 +14,7 @@
   }
   $dbcon=null;
   $dbms="mysql";
-  $host="127.0.0.1";
+  $host="http://mysql-awe.1d35.starter-us-east-1.openshiftapps.com/";
   $database="qingzhi";
   $userName="root";
   $passWord="";
