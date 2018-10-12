@@ -14,7 +14,7 @@
   }
   $dbcon=null;
   $dbms="mysql";
-  $host="mysql";
+  $host="mysql-persistent";
   $database="samplesql";
   $userName="caoduo";
   $passWord="123456";
