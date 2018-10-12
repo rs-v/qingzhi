@@ -14,10 +14,10 @@
   }
   $dbcon=null;
   $dbms="mysql";
-  $host="localhost";
+  $host="127.0.0.1";
   $database="qingzhi";
-  $userName="caoduo";
-  $passWord="123123";
+  $userName="root";
+  $passWord="";
   $dsn="{$dbms}:host={$host};dbname=${database};charset=utf8";
   try{
     $dbcon=new PDO($dsn,$userName,$passWord);
