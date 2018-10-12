@@ -39,7 +39,7 @@ function check(){
 		}
 	}else if(val==''){
 	}else{
-		alt("请输入正确的联系电话，目前支持手机号码和广州市固话，如果没有可以不输入。");
+		alt("请输入正确的联系电话，目前支持手机号码和固话，如果没有可以不输入。");
 		return 0;
 	}
 	val=$("#email").val();
@@ -52,7 +52,7 @@ function check(){
 		alt("请同意协议要求。");
 		return 0;
 	}
-	if($("#verify_code").val().length!=4){
+	if($("#verify_code").val().length!=5){
 		alt("请输入正确的验证码！");
 		return 0;
 	}
