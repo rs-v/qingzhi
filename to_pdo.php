@@ -14,10 +14,10 @@
   }
   $dbcon=null;
   $dbms="mysql";
-  $host="http://mysql-awe.1d35.starter-us-east-1.openshiftapps.com/";
-  $database="qingzhi";
-  $userName="root";
-  $passWord="";
+  $host="127.0.0.1";
+  $database="samplesql";
+  $userName="caoduo";
+  $passWord="123456";
   $dsn="{$dbms}:host={$host};dbname=${database};charset=utf8";
   try{
     $dbcon=new PDO($dsn,$userName,$passWord);
